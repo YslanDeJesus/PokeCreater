@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montador de Pokémon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .app-container {
+            width: 375px;
+            height: 667px;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #ffcb05;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #3d7211;
+        }
+        .pokemon-info {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .pokemon-image {
+            width: 150px;
+            height: 150px;
+            background-color: #e5e5e5;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+        }
+        .pokemon-image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .pokemon-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .selector-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .selector-group select {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 48%;
+        }
+        .footer {
+            background-color: #ffcb05;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #3d7211;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            Montador de Pokémon
+        </div>
+        <div class="pokemon-info">
+            <div class="pokemon-image">
+                <!-- Aqui está a imagem do Pikachu -->
+                <img src="pikachu.webp" alt="Pikachu">
+            </div>
+            <div class="pokemon-name">
+                <span>Nome: Pikachu</span> <!-- Nome do Pokémon -->
+            </div>
+
+            <!-- Seleção de Cabeça -->
+            <div class="selector-group">
+                <label for="cabeca">Cabeça:</label>
+                <select id="cabeca">
+                    <option value="pikachu-cabeca">Pikachu</option>
+                    <option value="bulbasaur-cabeca">Bulbasaur</option>
+                    <option value="charmander-cabeca">Charmander</option>
+                </select>
+            </div>
+
+            <!-- Seleção de Corpo -->
+            <div class="selector-group">
+                <label for="corpo">Corpo:</label>
+                <select id="corpo">
+                    <option value="pikachu-corpo">Pikachu</option>
+                    <option value="bulbasaur-corpo">Bulbasaur</option>
+                    <option value="charmander-corpo">Charmander</option>
+                </select>
+            </div>
+
+            <!-- Seleção de Pernas -->
+            <div class="selector-group">
+                <label for="pernas">Pernas:</label>
+                <select id="pernas">
+                    <option value="pikachu-pernas">Pikachu</option>
+                    <option value="bulbasaur-pernas">Bulbasaur</option>
+                    <option value="charmander-pernas">Charmander</option>
+                </select>
+            </div>
+
+            <!-- Tipo -->
+            <div class="selector-group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="eletrico">Elétrico</option>
+                    <option value="agua">Água</option>
+                    <option value="fogo">Fogo</option>
+                    <option value="grama">Grama</option>
+                </select>
+            </div>
+
+            <!-- Habilidade -->
+            <div class="selector-group">
+                <label for="habilidade">Habilidade:</label>
+                <select id="habilidade">
+                    <option value="choque">Choque do Trovão</option>
+                    <option value="raio">Raio</option>
+                    <option value="corte">Corte</option>
+                    <option value="furia">Fúria</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="footer">
+            Criar Pokémon
+        </div>
+    </div>
+</body>
+</html>
