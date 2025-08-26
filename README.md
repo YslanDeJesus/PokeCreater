@@ -1,6 +1,8 @@
 # PokeCreater
 ✨ O PokeCreater é um app divertido onde você pode criar seu próprio Pokémon escolhendo cabeça, corpo, pernas, tipo e habilidade! Faça login ou cadastre-se para salvar suas criações e compartilhar com amigos. Combine partes diferentes e crie Pokémons únicos e cheios de personalidade!
 
+Alunos: Leonardo Vilela, Yslan de Jesus, Matheus de Oliveira e Valério Cândido 3DS
+
 📌 Requisitos Funcionais (RF)
 
 Cadastro de usuário
